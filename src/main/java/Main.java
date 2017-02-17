@@ -4,10 +4,8 @@ import model.Product;
 
 import javax.ejb.embeddable.EJBContainer;
 import javax.naming.Context;
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.util.List;
-import java.util.Properties;
 
 public class Main {
 
