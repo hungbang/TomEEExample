@@ -42,4 +42,9 @@ public class Product implements Serializable {
         this.type = description;
     }
 
+
+    @Override
+    public String toString() {
+        return "ID: "+ id + " TYPE: "+ type;
+    }
 }

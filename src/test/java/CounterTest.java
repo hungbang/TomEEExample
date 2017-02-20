@@ -12,9 +12,9 @@ import javax.naming.NamingException;
 public class CounterTest extends TestCase {
 
     public void test() {
-//        final Context context = EJBContainer.createEJBContainer().getContext();
+        final Context context = EJBContainer.createEJBContainer().getContext();
         try {
-            final Context context =  new InitialContext();
+//            final Context context =  new InitialContext();
             Counter counterA = (Counter) context.lookup("java:global/EJDContainerExample/Counter");
             assertEquals(0, counterA.count());
             assertEquals(0, counterA.reset());
