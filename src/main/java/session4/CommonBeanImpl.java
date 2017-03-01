@@ -3,6 +3,8 @@ package session4;
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
 
+import SimpleStateful.Cart;
+
 @Stateful
 public class CommonBeanImpl implements CommonBean{
 
@@ -12,6 +14,9 @@ public class CommonBeanImpl implements CommonBean{
 	@EJB
 	private OtherBean otherBean;
 	
+	@EJB
+	private Cart cart;
+	
 	@Override
 	public ProductCart getProductCart() {
 		return productCart;
@@ -20,6 +25,12 @@ public class CommonBeanImpl implements CommonBean{
 	@Override
 	public OtherBean getOtherBean() {
 		return otherBean;
+	}
+
+	@Override
+	public Cart getCart() {
+		// TODO Auto-generated method stub
+		return cart;
 	}
 
 }

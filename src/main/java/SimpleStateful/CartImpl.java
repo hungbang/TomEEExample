@@ -21,7 +21,7 @@ import java.util.List;
 public class CartImpl implements Cart {
 
 
-    @PersistenceContext(unitName = "sakila-unit")
+    @PersistenceContext(unitName = "sakila-unit", type=PersistenceContextType.EXTENDED)
     private EntityManager entityManager;
 
 
